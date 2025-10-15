@@ -1,0 +1,7 @@
+com\anand\hotelmanagement\HotelManagementServiceApplication.class
+com\anand\hotelmanagement\repository\RoomRepository.class
+com\anand\hotelmanagement\service\HotelService.class
+com\anand\hotelmanagement\entity\Hotel.class
+com\anand\hotelmanagement\repository\HotelRepository.class
+com\anand\hotelmanagement\controller\HotelController.class
+com\anand\hotelmanagement\entity\Room.class

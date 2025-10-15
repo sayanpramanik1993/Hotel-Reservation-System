@@ -1,0 +1,47 @@
+databaseChangeLog:
+  - changeSet:
+      id: create-customers-table
+      author: Anand
+      changes:
+        - createTable:
+            tableName: customers
+            columns:
+              - column:
+                  name: id
+                  type: bigint
+                  autoIncrement: true
+                  constraints:
+                    primaryKey: true
+                    nullable: false
+              - column:
+                  name: name
+                  type: varchar(255)
+                  constraints:
+                    nullable: false
+              - column:
+                  name: email
+                  type: varchar(255)
+                  constraints:
+                    nullable: false
+                    unique: true
+              - column:
+                  name: password
+                  type: varchar(255)
+                  constraints:
+                    nullable: false
+  - changeSet:
+      id: seed-customers-table1
+      author: Anand
+      changes:
+        - insert:
+            tableName: customers
+            columns:
+              - column:
+                  name: name
+                  value: "Anand Verma"
+              - column:
+                  name: email
+                  value: "anand.verma@gmail.com"
+              - column:
+                  name: password
+                  value: "hashedpassword"
